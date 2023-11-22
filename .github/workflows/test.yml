@@ -3,6 +3,15 @@ on:
     types: [created]
   pull_request:
     types: [opened]
+  push:
+    branches: main
+    tags: 
+      - v1.**
+  release:
+    types: [created]
+  schedule:
+    - cron: '30 5,17 * * *'
+  workflow_dispatch:
     
 
 jobs:
