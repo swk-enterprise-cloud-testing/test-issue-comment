@@ -4,7 +4,7 @@ on:
   pull_request:
     types: [opened]
   push:
-    branches: main
+    branches: test
     tags: 
       - v1.**
   release:
